@@ -303,7 +303,7 @@ logo_svg = """
 """
 
 st.markdown(
-    f"""
+    """
     <div class="fintel-header">
         <div class="brand">
             {logo_svg}
