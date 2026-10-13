@@ -303,15 +303,12 @@ logo_svg = """
 """
 
 st.markdown(
-    f"""
-    <div class="fintel-header">
-        <div class="brand">
-            {logo_svg}
-            <span>Fintel</span>
-        </div>
-        <div class="header-divider"></div>
-        <div class="header-title">Finance Knowledge Assistant</div>
-        <div class="prototype">Prototype</div>
+    """
+    <div style="background-color: #173B67; padding: 20px; border-radius: 10px;">
+        <h1 style="color: white; margin: 0;">Fintel</h1>
+        <p style="color: white; margin: 5px 0 0 0;">
+            Finance Knowledge Assistant
+        </p>
     </div>
     """,
     unsafe_allow_html=True,
