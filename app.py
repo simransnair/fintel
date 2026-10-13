@@ -8,7 +8,6 @@ st.set_page_config(
     page_title="Fintel | Finance Assistant",
     page_icon="F",
     layout="wide",
-    initial_sidebar_state="expanded",
 )
 
 # Agreed Fintel colour palette
@@ -39,59 +38,6 @@ st.markdown(
         padding-bottom: 2.5rem;
     }}
 
-    /* Sidebar */
-    section[data-testid="stSidebar"] {{
-        background-color: {NAVY};
-        border-right: none;
-    }}
-
-    section[data-testid="stSidebar"] * {{
-        color: #FFFFFF;
-    }}
-
-    section[data-testid="stSidebar"] .stButton button {{
-        background: rgba(255,255,255,0.08);
-        color: #FFFFFF;
-        border: 1px solid rgba(255,255,255,0.18);
-        border-radius: 9px;
-        text-align: left;
-        min-height: 42px;
-    }}
-
-    section[data-testid="stSidebar"] .stButton button:hover {{
-        background: rgba(255,255,255,0.16);
-        border-color: #FFFFFF;
-    }}
-
-    .sidebar-brand {{
-        font-size: 1.65rem;
-        font-weight: 750;
-        letter-spacing: -0.5px;
-        color: #FFFFFF;
-        margin-bottom: 0.2rem;
-    }}
-
-    .sidebar-subtitle {{
-        color: #DCE8F7;
-        font-size: 0.82rem;
-        line-height: 1.5;
-    }}
-
-    .sidebar-label {{
-        color: #C9D9EE;
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-top: 1.2rem;
-        margin-bottom: 0.45rem;
-    }}
-
-    .sidebar-note {{
-        color: #DCE8F7;
-        font-size: 0.82rem;
-        line-height: 1.6;
-    }}
 
     /* Main header */
     .topbar {{
