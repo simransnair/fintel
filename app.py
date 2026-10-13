@@ -7,7 +7,6 @@ import streamlit as st
 st.set_page_config(
     page_title="Fintel | Finance Assistant",
     page_icon="F",
-    layout="wide",
 )
 
 # Agreed Fintel colour palette
@@ -279,71 +278,6 @@ if "messages" not in st.session_state:
 
 if "conversation_count" not in st.session_state:
     st.session_state.conversation_count = 0
-
-# --------------------------------------------------
-# Sidebar
-# --------------------------------------------------
-with st.sidebar:
-    st.markdown(
-        '<div class="sidebar-brand">Fintel</div>'
-        '<div class="sidebar-subtitle">'
-        'Internal Finance Knowledge Assistant'
-        '</div>',
-        unsafe_allow_html=True,
-    )
-
-    st.markdown("---")
-
-    if st.button(
-        "＋  New conversation",
-        use_container_width=True,
-        key="new_conversation",
-    ):
-        if st.session_state.messages:
-            st.session_state.conversation_count += 1
-        st.session_state.messages = []
-        st.rerun()
-
-    st.markdown(
-        '<div class="sidebar-label">Workspace</div>',
-        unsafe_allow_html=True,
-    )
-
-    st.markdown(
-        '<div class="sidebar-note">'
-        'Finance knowledge assistant<br>'
-        'Policy and procedure guidance<br>'
-        'Source-backed answers'
-        '</div>',
-        unsafe_allow_html=True,
-    )
-
-    st.markdown("---")
-
-    st.markdown(
-        '<div class="sidebar-label">Conversation history</div>',
-        unsafe_allow_html=True,
-    )
-
-    st.markdown(
-        '<div class="sidebar-note">'
-        'Conversation history is not saved yet. '
-        'Previous chats will not be available after a session ends.'
-        '</div>',
-        unsafe_allow_html=True,
-    )
-
-    st.markdown("---")
-
-    st.markdown(
-        '<div class="sidebar-label">About Fintel</div>'
-        '<div class="sidebar-note">'
-        'Find answers in internal Finance documents. '
-        'The connected assistant will provide source references '
-        'and indicate when evidence is insufficient.'
-        '</div>',
-        unsafe_allow_html=True,
-    )
 
 # --------------------------------------------------
 # Main header
